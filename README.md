@@ -1,0 +1,29 @@
+This elevator simulator will simulate a building with a selectable number of floors and elevators.  The user can call an elevator to a particular floor and then select another floor to send it to.  The simulation provides two views, a normal one where you can see the floors of the building with doors that open into the elevators and call buttons for the elevators, and a cutaway view that shows just the elevator cars and shafts.  You can also zoom out to view more of the simulation at once.
+
+This simulator also has an unusual feature: it contains a number of monkeys that will ride the elevators.  Monkeys being monkeys, their behavior can be a bit unpredictable.  They may stand in one place for a little bit, just wander around the floor they're currently on, or decide that they don't actually want to be on the floor they just arrived on and hop back into the elevator to go to a different floor.  You will be able to tell which floor they want to go to by the floor number displayed above their head.
+
+
+Parameters that control the simulation can be specified using the Building script on the Building object in the main scene.  The parameters that can be specified are as follows:
+
+Number Of Floors: How many floors the simulation has.  Minimum value is 2 and maximum value is 20.
+
+Number Of Elevators: How many elevators the simulation has.  Minimum value is 1 and maximum value is 10.
+
+Maximum Total Monkeys: The maximum amount of monkeys that can be roaming the simulation at once.  Minimum value is 1 and maximum value is 250.
+
+Minimum Time Between Monkeys: The smallest amount of time in seconds that can pass between monkeys entering the simulation (as long as there's room for more monkeys).  No minimum or maximum value, but the default value is 0.5.
+
+Maximum Time Between Monkeys: The largest amount of time in seconds that can pass between monkeys entering the simulation (as long as there's room for more monkeys).  No minimum or maximum value, but the default value is 2.
+
+
+Controls for the simulation:
+
+View toggle: In the upper right of the screen is a pair of buttons that will toggle the simulation between the normal view and the cutaway view.
+
+Zoom buttons: In the upper right of the screen is a pair of buttons that will allow you to increase or decrease the zoom level between three levels (1x, 2x, and 3x).
+
+Call buttons: The call buttons present on each floor can be clicked on to bring an elevator going that direction to that floor.  Once the elevator arrives, you can select the floor you want the elevator to go to from a dialog popup.
+
+Mouse scroll wheel: The scroll wheel can be used to set the zoom level of the simulation to any value between the minmum zoom level (1x) and the maximum zoom level (3x).
+
+Arrow keys / WASD: These keys can be used to move the viewing area around the simulation.
